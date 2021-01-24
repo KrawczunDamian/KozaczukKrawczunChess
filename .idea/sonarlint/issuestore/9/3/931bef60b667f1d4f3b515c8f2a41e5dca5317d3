@@ -1,0 +1,11 @@
+
+]	java:S125Z"<This block of commented-out lines of code should be removed.(ñ¨À­ıÿÿÿÿ8Û®…©ó.
+[
+java:S1144g"9Remove this unused private "setupProfileListView" method.(«•½ıÿÿÿÿ8Û®…©ó.
+N
+java:S1068#"1Remove this unused "profileObject" private field.(îŞ¾ğ8¸İ¨ó.
+y
+java:S1450#"\Remove the "profileObject" field and declare it as a local variable in the relevant methods.(îŞ¾ğ8¸İ¨ó.
+]	java:S110"<This class has 9 parents which is greater than 5 authorized.(Ÿ¸¯ıÿÿÿÿ8ŸËÇ§ó.
+‰
+java:S3252b"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(æ¤òÏüÿÿÿÿ8¸İ¨ó.

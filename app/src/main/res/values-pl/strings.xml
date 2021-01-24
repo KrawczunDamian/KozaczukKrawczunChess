@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Menadżer Lichess</string>
+        <string name="wpisz_nazw_u_ytkownika">Wpisz nazwę użytkownika</string>
+    <string name="obejrzyj_jego_profil">Obejrzyj profil</string>
+    <string name="streamerzy_online">Streamerzy online</string>
+    <string name="username">Nazwa użytkownika:</string>
+    <string name="id">ID:</string>
+    <string name="streamers_title">Streamerzy online</string>
+    <string name="profile_title">Profil użytkownika</string>
+    <string name="lichess_youtube_channel">https://www.youtube.com/channel/UCr6RfQga70yMM9-nuzAYTsA</string>
+    <string name="lichess_youtube_button">Konto Lichess na Youtube</string>
+    <string name="classical_leaderboard_button">Top 10 klasyczny</string>
+    <string name="label_classical_top">Top 10 klasyczny</string>
+
+
+</resources>

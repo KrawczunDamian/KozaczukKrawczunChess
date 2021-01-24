@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lichess Manager</string>
+    <string name="wpisz_nazw_u_ytkownika">Enter username</string>
+    <string name="obejrzyj_jego_profil">Check profile</string>
+    <string name="streamerzy_online">Online streamers</string>
+    <string name="username">Username:</string>
+    <string name="id">ID:</string>
+    <string name="streamers_title">Streamers online</string>
+    <string name="profile_title">User profile</string>
+    <string name="lichess_youtube_channel">https://www.youtube.com/channel/UCr6RfQga70yMM9-nuzAYTsA</string>
+    <string name="lichess_youtube_button">Lichess youtube channel</string>
+    <string name="classical_leaderboard_button">Top 10 classical</string>
+    <string name="label_classical_top">Top 10 classical</string>
+    <string name="rating">Rating:</string>
+
+</resources>

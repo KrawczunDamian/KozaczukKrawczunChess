@@ -1,0 +1,7 @@
+
+r	java:S116"QRename this field "UserID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó«Òüüÿÿÿÿ8«½Ðøò.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Ìº»ÿÿÿÿÿ8æ´ñ£ó.
+L
+java:S5411"*Use the primitive boolean expression here.(Ù‰¶Øüÿÿÿÿ8´¤«ùò.
+J
+java:S1125"(Remove the literal "true" boolean value.(Ù‰¶Øüÿÿÿÿ8´¤«ùò.

@@ -1,0 +1,15 @@
+
+O
+java:S1128"3Remove this unused import 'android.content.Intent'.(³ð‹G8ÉÃ¤³ó.
+Z
+java:S1068$"=Remove this unused "classicalTopProfileObject" private field.(Ì®ðâ8àª¹´ó.
+X	java:S125^"<This block of commented-out lines of code should be removed.(„Úì¹8“æÂ´ó.
+]	java:S110"<This class has 9 parents which is greater than 5 authorized.(Ä‹¶Éùÿÿÿÿ8ª‡³ó.
+…
+java:S1450$"hRemove the "classicalTopProfileObject" field and declare it as a local variable in the relevant methods.(Ì®ðâ8àª¹´ó.
+„
+java:S3252d"gUse static access with "com.google.android.material.snackbar.BaseTransientBottomBar" for "LENGTH_LONG".(ÌÖÁ³8Ž¶Ï³ó.
+W
+java:S1144i":Remove this unused private "setupClassicalTopList" method.(›»ºØ8“æÂ´ó.
+P
+java:S1128".Remove this unused import 'android.view.View'.(Ø½­äþÿÿÿÿ8µÉÄ³ó.

@@ -1,0 +1,11 @@
+
+E
+java:S1604("(Make this anonymous inner class a lambda(ÍëñÈ8îì¿²ó.
+J
+java:S1604"(Make this anonymous inner class a lambda(ûï¹şÿÿÿÿ8÷óÂ©ó.
+G
+java:S11720"+Remove this unused method parameter "view".(äÍïL8¿«§²ó.
+}	java:S116"aRename this field "profile_username_input" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜Ã‹Õ8°Â©ó.
+X	java:S110"<This class has 9 parents which is greater than 5 authorized.(²Ú±8•Úâøò.
+J
+java:S1604 "(Make this anonymous inner class a lambda(ŠÂúÊÿÿÿÿÿ8÷óÂ©ó.
