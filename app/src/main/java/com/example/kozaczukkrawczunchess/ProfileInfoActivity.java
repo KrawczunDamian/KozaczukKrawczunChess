@@ -29,57 +29,13 @@ public class ProfileInfoActivity extends AppCompatActivity {
         fetchProfileData(username);
     }
 
-    private class ProfileHolder extends RecyclerView.ViewHolder{
-        private TextView usernameTextView;
-        private TextView idTextView;
-        private Profile profileObject;
 
-        public ProfileHolder(LayoutInflater inflater, ViewGroup parent){
-            super(inflater.inflate(R.layout.profile_info_recycler_view_item, parent, false));
-            usernameTextView = itemView.findViewById(R.id.profile_username);
-            idTextView = itemView.findViewById(R.id.profile_id);
-        }
-
-        public void bind(Profile profile) {
-            usernameTextView.setText(profile.getUsername());
-            idTextView.setText(profile.getUserID());
-            profileObject = profile;
-        }
-    }
-    private class ProfileAdapter extends RecyclerView.Adapter<ProfileInfoActivity.ProfileHolder>{
-        private List<Profile> profiles;
-
-        @NonNull
-        @Override
-        public ProfileInfoActivity.ProfileHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
-            return new ProfileHolder(getLayoutInflater(),parent);
-        }
-
-        @Override
-        public void onBindViewHolder(@NonNull ProfileInfoActivity.ProfileHolder holder, int position){
-            if(profiles !=null){
-                Profile profile = profiles.get(position);
-                holder.bind(profile);
-            } else {
-                Log.d("MainActivity","No profiles");
-            }
-        }
-
-        @Override
-        public int getItemCount() {
-            return 0;
-        }
-
-        void setProfiles(List<Profile> profiles){
-            this.profiles = profiles;
-            notifyDataSetChanged();
-        }
-    }
-
-    private void fetchProfileData(String query){
+    private void fetchProfileData(String query) {
         ProfileAPI profileAPI = RetrofitInstance.getRetrofitInstance().create(ProfileAPI.class);
-        TextView usernameTextView = (TextView)findViewById(R.id.profile_username);
-        TextView idTextView = (TextView)findViewById(R.id.profile_id);
+        TextView usernameTextView = (TextView) findViewById(R.id.profile_username);
+        TextView idTextView = (TextView) findViewById(R.id.profile_id);
+        TextView classicalRatingTextView = (TextView)findViewById(R.id.profile_classical_rating);
+        TextView isOnlineView = (TextView) findViewById(R.id.profile_online);
         Call<Profile> profileApiCall = profileAPI.findProfile(query);
 
         profileApiCall.enqueue(new Callback<Profile>() {
@@ -87,6 +43,8 @@ public class ProfileInfoActivity extends AppCompatActivity {
             public void onResponse(Call<Profile> call, Response<Profile> response) {
                 usernameTextView.setText(response.body().getUsername());
                 idTextView.setText(response.body().getUserID());
+                classicalRatingTextView.setText(response.body().getPerfs().getClassical().getRating().toString());
+                isOnlineView.setText(response.body().getOnline());
                 /*response.body();
                 List<Profile> profileList = null;
                 profileList.add(response.body());
@@ -95,19 +53,9 @@ public class ProfileInfoActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Profile> call, Throwable t) {
-                Snackbar.make(findViewById(R.id.profile_view),"Something went wrong!",Snackbar.LENGTH_LONG).show();
+                Snackbar.make(findViewById(R.id.profile_view), "Something went wrong!", Snackbar.LENGTH_LONG).show();
             }
         });
 
-    }
-    private void setupProfileListView(List<Profile> profiles){
-        RecyclerView recyclerView = findViewById(R.id.profile_info_recycler_view);
-        final ProfileInfoActivity.ProfileAdapter adapter = new ProfileInfoActivity.ProfileAdapter();
-        adapter.setProfiles(profiles);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-    }
-    public boolean checkNullOrEmpty(String text){
-        return text != null && !TextUtils.isEmpty(text);
     }
 }

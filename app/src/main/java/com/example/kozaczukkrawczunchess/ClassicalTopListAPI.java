@@ -5,6 +5,6 @@ import retrofit2.http.GET;
 
 public interface ClassicalTopListAPI {
     @GET("player/top/10/classical")
-    Call<ClassicalTopList> getTopClassical();
+    Call<ProfilesList> getTopClassical();
 
 }

@@ -7,8 +7,6 @@ P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 y
 Iapp/src/main/java/com/example/kozaczukkrawczunchess/RetrofitInstance.java,a\e\aeb3c53a95c692cf1a2c7082976d7f8ca5f72b8d
-y
-Iapp/src/main/java/com/example/kozaczukkrawczunchess/ProfileContainer.java,2\b\2b249b6ef1e24f9309b37e86038b1391bed9106b
 p
 @app/src/main/java/com/example/kozaczukkrawczunchess/Profile.java,2\8\28ac15b6c0492876b5e17bda42be4bc14f9d84f3
 s

@@ -1,10 +1,8 @@
 package com.example.kozaczukkrawczunchess;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -15,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import java.util.Arrays;
 import java.util.List;
 
 import retrofit2.Call;
@@ -86,17 +83,17 @@ public class ClassicalTopActivity extends AppCompatActivity {
         ClassicalTopListAPI classicalTopListAPI = RetrofitInstance.getRetrofitInstance().create(ClassicalTopListAPI.class);
         TextView topUserTextView = (TextView)findViewById(R.id.classical_top_id_test);
 
-        Call<ClassicalTopList> classicalTopListAPICall = classicalTopListAPI.getTopClassical();
+        Call<ProfilesList> classicalTopListAPICall = classicalTopListAPI.getTopClassical();
 
-        classicalTopListAPICall.enqueue(new Callback<ClassicalTopList>() {
+        classicalTopListAPICall.enqueue(new Callback<ProfilesList>() {
             @Override
-            public void onResponse(Call<ClassicalTopList> call, Response<ClassicalTopList> response) {
+            public void onResponse(Call<ProfilesList> call, Response<ProfilesList> response) {
                 //setupClassicalTopList(Arrays.asList(response.body()));
-                topUserTextView.setText(response.body().profiles[0].getUserID());
+                topUserTextView.setText(response.body().getProfiles().get(0).getUserID());
             }
 
             @Override
-            public void onFailure(Call<ClassicalTopList> call, Throwable t) {
+            public void onFailure(Call<ProfilesList> call, Throwable t) {
                 Snackbar.make(findViewById(R.id.classical_top_view),"Something went wrong!",Snackbar.LENGTH_LONG).show();
             }
         });

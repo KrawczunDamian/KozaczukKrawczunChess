@@ -12,6 +12,18 @@
     <string name="lichess_youtube_button">Konto Lichess na Youtube</string>
     <string name="classical_leaderboard_button">Top 10 klasyczny</string>
     <string name="label_classical_top">Top 10 klasyczny</string>
+    <string name="rating">Notowanie:</string>
+    <string name="classical_rating_label">Klasyczny punktacja:</string>
+    <string name="is_online_label">Czy online:</string>
+    <string name="button_check_matchup">Sprawdź wyniki</string>
+    <string name="hint_user1">Użytkownik 1</string>
+    <string name="hint_user2">Uzytkownik 2</string>
+    <string name="vs">vs</string>
+    <string name="rating_label">Punktacja:</string>
+    <string name="button_go_to_rating">Sprawdź notowania</string>
+    <string name="name">Nazwa</string>
+    <string name="title_ranking_history">\":historia notowań\"</string>
+    <string name="points_no_history">Brak historii</string>
 
 
 </resources>

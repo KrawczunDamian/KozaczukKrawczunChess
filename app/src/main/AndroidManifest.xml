@@ -23,6 +23,8 @@
             android:label="@string/profile_title"></activity>
         <activity android:name=".ClassicalTopActivity"
             android:label="@string/label_classical_top"></activity>
+        <activity android:name=".MatchupActivity"></activity>
+        <activity android:name=".RatingHistoryActivity"></activity>
     </application>
 
 </manifest>

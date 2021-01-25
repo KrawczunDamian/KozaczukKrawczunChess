@@ -12,5 +12,16 @@
     <string name="classical_leaderboard_button">Top 10 classical</string>
     <string name="label_classical_top">Top 10 classical</string>
     <string name="rating">Rating:</string>
+    <string name="classical_rating_label">Classical rating:</string>
+    <string name="is_online_label">Is online:</string>
+    <string name="button_check_matchup">Check matchup</string>
+    <string name="hint_user1">User 1</string>
+    <string name="hint_user2">User 2</string>
+    <string name="vs">vs</string>
+    <string name="rating_label">Rating:</string>
+    <string name="button_go_to_rating">Check rating history</string>
+    <string name="name">Name:</string>
+    <string name="title_ranking_history">\" ranking history\"</string>
+    <string name="points_no_history">No history</string>
 
 </resources>
